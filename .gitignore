@@ -40,3 +40,6 @@ Thumbs.db
 # CRUCIALE: Non caricare mai file con password o chiavi API.
 .env
 *.env.*
+
+# Dependencies
+/node_modules
