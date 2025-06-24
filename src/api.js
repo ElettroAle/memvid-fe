@@ -1,5 +1,4 @@
 import axios from 'axios';
-import axios from 'axios';
 
 // 1. Leggiamo la variabile d'ambiente VITE_API_BASE_URL.
 // 2. Se non la trova (come quando sei in sviluppo locale), usa l'URL di localhost come fallback.
