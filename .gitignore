@@ -1,0 +1,42 @@
+# Ambiente Virtuale Python
+# Non caricare mai le librerie installate, che possono pesare centinaia di MB.
+.venv/
+venv/
+ENV/
+
+# File di configurazione di editor e IDE
+# Le impostazioni sono personali e non vanno condivise.
+.vscode/
+.idea/
+
+# Cache e file compilati di Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Cartelle generate dall'API
+# Queste cartelle contengono dati generati a runtime, non codice sorgente.
+memvid_memories/
+temp_uploads/
+
+# File generati da Setuptools e Pip
+*.egg-info/
+*.egg
+build/
+dist/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# File di sistema operativo
+.DS_Store
+Thumbs.db
+
+# Log e database temporanei
+*.log
+*.sqlite3
+
+# File di ambiente e segreti
+# CRUCIALE: Non caricare mai file con password o chiavi API.
+.env
+*.env.*
