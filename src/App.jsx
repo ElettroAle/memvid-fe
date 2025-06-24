@@ -13,7 +13,7 @@ function App() {
     const fetchMemories = async () => {
         try {
             const response = await getMemories();
-            setMemories(response.data.memories);
+            setMemories(response.memories);
         } catch (error) {
             console.error("Errore nel caricamento delle memorie:", error);
         }

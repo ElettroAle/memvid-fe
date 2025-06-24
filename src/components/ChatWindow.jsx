@@ -29,7 +29,7 @@ export function ChatWindow({ memoryName }) {
 
         try {
             const res = await queryMemory(memoryName, input);
-            const aiMessage = { sender: 'ai', text: res.data.response };
+            const aiMessage = { sender: 'ai', text: res.response };
             setMessages(prev => [...prev, aiMessage]);
         } catch (error) {
             const errorMessage = { sender: 'ai', text: 'Spiacente, si è verificato un errore.' };
