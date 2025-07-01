@@ -1,7 +1,9 @@
 // src/api.js
 
-// Come prima, leggiamo la variabile d'ambiente o usiamo il fallback locale.
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8001/api/v1';
+if (!import.meta.env.VITE_API_BASE_URL) {
+    throw new Error('VITE_API_BASE_URL is missing in environment variables');
+}
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 // Una funzione helper per gestire le risposte e gli errori di fetch
 async function handleResponse(response) {
