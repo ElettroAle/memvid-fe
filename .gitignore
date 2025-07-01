@@ -39,7 +39,9 @@ Thumbs.db
 # File di ambiente e segreti
 # CRUCIALE: Non caricare mai file con password o chiavi API.
 .env
-*.env.*
+.env.local
+.env.development
+.env.production
 
 # Dependencies
 /node_modules
